@@ -20,10 +20,10 @@
 <body>
     <div class="main">
         <nav>
-            <span><img width="53" src="assets/img/logo.svg" alt=""></span>
+            <span><img class="logo" width="53" src="assets/img/logo.svg" alt=""></span>
             <div>
-                <select class="btn">
-                    <option class="lang">English</option>
+                <select class="btn splbtn">
+                    <option class="lang" selected>English</option>
                     <option class="lang">हिंदी</option>
                 </select>
                 <button class="btn btn-red-sm">Sign In</button>
@@ -36,8 +36,12 @@
             <span>Watch anywhere. Cancel anytime.</span>
             <span>Ready to watch? Enter your email to create or restart your membership.</span>
             <div class="mid-buttons">
-                <input type="text" placeholder="Email Address">
+                <div class="form_input">
+                    <input type="text" id="form_email" class="email_input" placeholder=" " required>
+                    <label for="form_email" class="email_label">Email address</label>
+                </div>
                 <button class="btn btn-red">Get Started &gt;</button>
+
             </div>
         </div>
 
@@ -108,70 +112,121 @@
         <section class="faq">
             <h2>Frequently Asked Questions</h2>
             <div class="faqbox">
-                <span>What is NetFlix</span>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-
+                <div class="que">
+                    <span>What is NetFlix</span>
+                    <svg id="large_icon1" width="24" height="24" viewBox="0 0 24 24" fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <p id="ans1" class="ans" style="display: none">Netflix is a streaming service that offers a wide variety of
+                    award-winning TV shows,
+                    movies, anime, documentaries and more – on thousands of internet-connected devices.<br><br>You can
+                    watch as much as you want, whenever you want, without a single ad – all for one low monthly price.
+                    There's always something new to discover, and new TV shows and movies are added every week!
+                </p>
             </div>
+
             <div class="faqbox">
-                <span>How much does Netflix cost?</span>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-
+                <div class="que">
+                    <span>How much does Netflix cost?</span>
+                    <svg id="large_icon2" width="24" height="24" viewBox="0 0 24 24" fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <p id="ans2" class="ans" style="display: none">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+                    streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra
+                    costs, no contracts.
+                </p>
             </div>
+
             <div class="faqbox">
-                <span>Where can I watch?</span>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-
+                <div class="que">
+                    <span>Where can I watch?</span>
+                    <svg id="large_icon3" width="24" height="24" viewBox="0 0 24 24" fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <p id="ans3" class="ans" style="display: none">Watch anywhere, anytime. Sign in with your Netflix account to watch
+                    instantly on the web at netflix.com from your personal computer or on any internet-connected device
+                    that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and
+                    game consoles.<br><br>
+                    You can also download your favourite shows with the iOS or Android app. Use downloads to watch while
+                    you're on the go and without an internet connection. Take Netflix with you anywhere.
+                </p>
             </div>
+
             <div class="faqbox">
-                <span>How do I cancel?</span>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-
+                <div class="que">
+                    <span>How do I cancel?</span>
+                    <svg id="large_icon4" width="24" height="24" viewBox="0 0 24 24" fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <p id="ans4" class="ans" style="display: none">Netflix is flexible. There are no annoying contracts and no
+                    commitments. You can easily cancel your account online in two clicks. There are no cancellation fees
+                    – start or stop your account anytime.
+                </p>
             </div>
+
             <div class="faqbox">
-                <span>What can I watch on Netflix?</span>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-
+                <div class="que">
+                    <span>What can I watch on Netflix?</span>
+                    <svg id="large_icon5" width="24" height="24" viewBox="0 0 24 24" fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <p id="ans5" class="ans" style="display: none">Netflix has an extensive library of feature films, documentaries,
+                    TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you
+                    want.
+                </p>
             </div>
+
             <div class="faqbox">
-                <span>Is Netflix good for kids?</span>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-
+                <div class="que">
+                    <span>Is Netflix good for kids?</span>
+                    <svg id="large_icon6" width="24" height="24" viewBox="0 0 24 24" fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <p id="ans6" class="ans" style="display: none">The Netflix Kids experience is included in your membership to give
+                    parents control while kids enjoy family-friendly TV shows and films in their own space.<br><br>
+                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of
+                    content kids can watch and block specific titles you don’t want kids to see.
+                </p>
             </div>
+
 
             <div class="mid2">
                 <div>Ready to watch? Enter your email to create or restart your membership.</div>
                 <div class="mid-buttons">
-                    <input type="text" placeholder="Email Address">
+                    <div class="form_input">
+                        <input type="text" id="form_email" class="email_input" placeholder=" " required>
+                        <label for="form_email" class="email_label">Email address</label>
+                    </div>
                     <button class="btn btn-red">Get Started &gt;</button>
                 </div>
             </div>
@@ -211,15 +266,15 @@
                 </div>
             </div>
             <div class="footer-end">
-                <select class="btn">
-                    <option class="lang">English</option>
+                <select class="btn splbtn">
+                    <option class="lang" selected>English</option>
                     <option class="lang">हिंदी</option>
                 </select>
                 <div>Netflix India</div>
             </div>
         </footer>
 
-
+        <script src="script.js"></script>
 </body>
 
 </html>

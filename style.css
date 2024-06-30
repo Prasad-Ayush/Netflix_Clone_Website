@@ -39,7 +39,7 @@ nav {
     background-color: white;
     color: black;
 }
-nav img{
+.logo{
     color: red;
     width : 150px;
     position: relative;
@@ -104,8 +104,31 @@ nav select{
     z-index: 20;
 }
 
+.form_input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.email_label{
+    cursor: text;
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    transition: all .3s ease-in-out 0s;
+}
+
+.email_input{
+    background: transparent;
+}
+
+.email_input:focus + label,.email_input:not(:placeholder-shown) + label  {
+    top:6px;
+    font-size:10px;
+}
+
 .btn {
-    padding: 5px 15px;
+    padding: 5px 20px;
     font-weight: 400;
     color: white;
     background-color: rgba(248, 243, 243, 0.021);
@@ -116,10 +139,20 @@ nav select{
 
 }
 
+.splbtn{
+	padding-left: 33px;
+    padding-right: 6px;
+	background-image: url(assets/img/btnlogo.svg);
+	background-repeat: no-repeat;
+	background-position: right 78px center;
+	background-size: 17px;
+    position: relative;
+    z-index: 10;
+}
 .btn-red {
     background-color: red;
     color: white;
-    padding: 3px 24px;
+    padding: 8px 24px;
     font-size: 21px;
     border: 1px solid red;
     border-radius: 4px;
@@ -133,7 +166,7 @@ nav select{
 }
 
 .main input {
-    padding: 7px 101px 8px 14px;
+    padding: 20px 101px 5px 16px;
     color: white;
     font-size: 16px;
     border-radius: 4px;
@@ -218,25 +251,40 @@ section.first>div :nth-child(2) {
     padding: 34px;
 }
 
-.faqbox:hover {
-    background-color:  #414141;
-    color: white;
+.faqbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    max-width: 75vw;
+    margin: 10px auto;   
 }
 
-.faqbox svg {
+.ans{
+    display: none;
+    background-color: #2d2d2d;
+    font-size: 21px;
+    margin-top: 2px;
+    padding: 22px;
+    text-align: left;
+}
+
+.que svg {
     filter: invert(1);
 }
 
-.faqbox {
+.que{
     transition: all 0.5s ease-out;
     font-size: 24px;
     display: flex;
     justify-content: space-between;
     background-color: #2d2d2d;
     padding: 24px;
-    max-width: 72vw;
-    margin: 10px auto;
     cursor: pointer;
+}
+
+.que:hover {
+    background-color:  #414141;
+    color: white;
 }
 
 footer{
@@ -271,8 +319,8 @@ footer .questions {
 
 .footer-end> select{
     width: 120px;
-    padding: 0 0;
     margin: 25px 0;
+    background-position: right 86px center;
 }
 
 
